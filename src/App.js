@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/Navbar/Navbar';
+import Sidebar from './components/Sidebar/Sidebar';
+import MainContent from './components/MainContent/MainContent';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+
+
+  const [sidebarNames, setSidebarNames] = useState([]);
+
+  const addNameToSidebar = (name) => {
+    if (name.trim()) {
+      setSidebarNames([...sidebarNames, name]);
+    }
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="app-body">
+      <Sidebar  names={sidebarNames}/>
+        <MainContent addNameToSidebar={addNameToSidebar}/>
+      </div>
     </div>
   );
 }

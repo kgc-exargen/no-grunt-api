@@ -1,0 +1,159 @@
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .request-method {
+    /* display: flex;
+    width: 100px;
+    flex-direction: column;
+    gap: 10px; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .request-methods{
+
+    padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  }
+
+  .request-url{
+    flex: 1; 
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  }
+
+  .send-button{
+    padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  }
+
+  .send-button:hover {
+    background-color: #e0e0e0; 
+  }
+
+  .params-fields{
+    display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  }
+  
+
+
+  .params-section, .headers-section, .body-section {
+    margin-top: 10px;
+  }
+
+  .params-section button, .headers-section button{
+    margin-left: 2px;
+    margin-right: 20px;
+  }
+  
+  .param-row, .header-row {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .response-section {
+    margin-top: 20px;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+  }
+
+  
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .api-name{
+   
+  padding: 10px 15px;
+  font-size: 14px;
+
+  }
+
+
+  .dynamic-input-form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #004d61;
+    background-color: #004d61;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tab.active {
+    background-color: #22c1ad;
+  }
+  
+  .fields-container {
+    margin-bottom: 20px;
+  }
+  
+  .field-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .field-row input {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #004d61;
+    border-radius: 4px;
+    flex: 1;
+  }
+  
+  .add-button,
+  .remove-button,
+  .submit-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #004d61;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .add-button:hover,
+  .remove-button:hover,
+  .submit-button:hover {
+    background-color: #1aa891;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  

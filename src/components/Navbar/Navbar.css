@@ -1,0 +1,18 @@
+.navbar {
+  background: linear-gradient(to right,#0f5064, #042b42);
+    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .navbar-logo h2 {
+    margin: 0;
+  }
+  
+  .navbar-user {
+    display: flex;
+    align-items: center;
+  }
+  

@@ -1,0 +1,36 @@
+.sidebar {
+    width: 200px;
+    background: linear-gradient(to bottom, #042b42, #0f5064);
+    background-color: #042b42;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .new-api-btn {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+  }
+  
+  .api-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .api-item {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .api-item:hover {
+    background-color: #16a085;
+  }
+  
